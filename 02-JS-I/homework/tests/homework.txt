@@ -1,0 +1,57 @@
+* Variables: se utilizan para guardar datos, pudiendo ser estos strings, numbers o booleans, cada una puede ser utilizada en el momento requerido. 
+En JS tenemos tres formas de declarar variables,  a travez de var, de len o de const.
+Las variables generadas por var o len, son variables a las cuales se les puede ir cambiando el valor que contienen, en cambio las variables generadas a traves de
+const, son variables fijas, constantes, a las cuales no se les puede cambiar su valor.
+A modo de ejemplo podriamos decir que las variables son como pequeñas cajas que alojan un objeto en su interior. Las variables generadas por var y len, serian cajas
+a las cuales se les puede cambiar el objeto en su interior.
+Dicho lo anterior, supongamos que tenemos dos de estas cajas y que en cada una hay objetos diferentes, en la A hay un destornillador y 
+en la  B hay unas tijeras. 
+Acorde a esto se nos presentan dos problemas diferentes:
+Problema N°1: debemos quitar dos tornillos de una tapa. 
+Problema N°2: debemos recortar un trozo de papel blanco.
+En cada uno de estros problemas vamos a utilizar una caja (variable) diferente segun su contenido (su valor).
+Para el problema N°1 vamos a utilizar la caja A, que es la que contiene el destornillador y para el problema N�2 la caja B, la cual contiene las tijeras.
+
+Del mismo modo, que los ejemplos anteriores, podriamos utilizar las variables:
+
+Variable A:  var A = 25 
+Variable B:  var B = "Palabra"
+Caso A: utilice una variable de valor string.
+Caso B: utilice una variable de valor numerico.
+
+Para el primer caso vamos a utilizar la variable B, ya que esta contiene una palabra en su interior, la cual es un dato string.
+Para el segundo caso vamos a utilizar la variable A, ya que esta contiene un numero en su interior, el cual es un dato numerico.
+
+* Strings: es uno de los tres tipos de datos que hay en JS, este pueden ser letra o letras, palabras o cadenas de palabras, 
+estos bloques de textos siempre se escriben entre comillas (simples o dobles) 
+Ej: 'A',  'Amar' , "El arte de amar". No importa si dentro del bloque de texto hay numeros, mientras estos se encuentren entre comillas, siguen
+siendo un string. Ej: "24, 37" o 'Javier tiene 24 años.'
+Los strings pueden ser valores alojados en una variable, como por ejemplo en la variable B (B = "Palabra") de la explicacion de variables.
+
+* Funciones (argumentos, return): las funciones son un conjunto de instrucciones que realizan una tarea.
+Para que estas instrucciones sean una funcion, deben tener datos de entrada y por lo tanto datos de salida. 
+Como ejemplo podriamos decir que una funcion es como una expendedora de refrescos, la persona ingresa su dinero y selecciona el refresco que desea (datos de entrada),
+luego y en base a los datos de entrada, la expendedora hace los calculos para terminar expendiendo el refresco (dato de salida) seleccionado por la persona.
+
+Ejemplo:
+
+function expendedora(dinero, refresco){
+  if (dinero < 0) {
+      return refresco;
+  }
+  return "No se ingreso el dinero"
+}
+
+* Declaraciones `if`: estas se utilizan para ver si un valor es verdadero o falso y en base a esto el programa decide como proseguir.
+    Ejemplo:
+    Un automovil tiene un semaforo en frente, aque el conductor debe decidir, en base a la luz del semaforo, si sigue o frena. En este caso planteamos un if (si), si la luz del semaforo
+    es verde seguir adelante, pero, si la luz es roja frenar y esperar la luz verde.
+
+    If (semaforo === 'verde'){
+        return 'Seguir adelante';
+    }
+    else return 'Detenerse y esperar la luz verde';
+
+* Valores booleanos (`true`, `false`): estos valores representan los valores verdadero o falso, cuando una variable contiene un valor 
+booleano, solo puede ser false (falso) o true (verdadero). 
+ 
